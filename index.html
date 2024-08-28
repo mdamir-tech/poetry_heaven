@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Video Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: blur(5px);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 28px;
+        }
+
+        .visit-button {
+            border: 3px solid;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent; /* Button background color */
+            color: #fff; /* Button text color */
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            fill-opacity: 5px;
+        }
+        .visit-button:hover{
+            color: #001F3F;
+            background-color: #fff;
+        }
+        .site{
+            padding: 10px 50px;
+            /* width: 400px; */
+       
+            
+            margin: 10px;
+            border: 3px solid;
+            text-decoration: none;
+            border-radius: 5px;
+            fill-opacity: 5px;
+            background-color: transparent; /* Button background color */
+            color: #fff;
+        }
+        .site:hover{
+            color: #001F3F;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="poet.mp4" type="video/mp4">
+        <!-- You can add more video formats (e.g., webm, ogg) for compatibility -->
+    </video>
+
+    <div class="content">
+        <h1 class="sitee">Visit my site</h1>
+        <p class="site">Subscribe to PoetryHeaven</p>
+        <a class="visit-button" href="login.html">Click Me!</a>
+    </div>
+</body>
+</html>
